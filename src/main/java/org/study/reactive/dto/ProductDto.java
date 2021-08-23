@@ -11,7 +11,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class ProductDto {
 
-    private UUID productId;
+    private String productId;
     private String productName;
     private int qty;
     private double price;

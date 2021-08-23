@@ -10,10 +10,10 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collation = "products")
+@Document(collection = "products")
 public class Product {
     @Id
-    private UUID productId;
+    private String productId;
     private String productName;
     private int qty;
     private double price;

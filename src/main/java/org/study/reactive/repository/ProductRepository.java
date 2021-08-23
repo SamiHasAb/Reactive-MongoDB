@@ -7,9 +7,8 @@ import org.study.reactive.dto.ProductDto;
 import org.study.reactive.model.Product;
 import reactor.core.publisher.Flux;
 
-import java.util.UUID;
 @Repository
-public interface ProductRepository extends ReactiveMongoRepository<Product, UUID> {
+public interface ProductRepository extends ReactiveMongoRepository<Product, String> {
 
     Flux<ProductDto> findByPriceBetween(Range<Double> priceRange);
 
